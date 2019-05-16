@@ -3,7 +3,7 @@
 
 This Python implementation is base on [Faster-RCNN](https://github.com/rbgirshick/py-faster-rcnn).
 
-Training Faster-RCNN with VGG-16 on a customer dataset, as fallows. 
+Training Faster-RCNN with VGG-16 on a customer dataset as fallows. 
 ### Step 1: Download Faster-RCNN:
 We'll call the directory that you cloned Faster R-CNN into `Faster-RCNN-root`
     
@@ -47,7 +47,7 @@ Then you should linke this dataset with py-faster-rcnn:
 
 
 (1) Transform your data into the format of VOC2007. The pascal voc 2007 dataset are composed of three folders: Annotations, ImageSets, JPEGImages. You should build your own dataset like this. The annotations file should be ".xml" format named by image name, each sample own a xml file. Then you divide your dataset into trainval, val, train, test part. Then you delete the original "VOC2007" folder inside the "VOCdevkit" folder with the new dataset folder you just created. 
-
+<img src="util/data-formate.png" width="700">
 
 ### Step 5: Modify multiple files
 (1) change the file "$Faster-RCNN-root/lib/datasets/pascal_voc.py" line 30 "self._classes" to the actuall classes of your datasets such as 5.
