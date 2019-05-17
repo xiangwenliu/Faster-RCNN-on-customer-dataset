@@ -47,7 +47,7 @@ Then you should linke this dataset with py-faster-rcnn:
 
 
 (1) Transform your data into the format of VOC2007. The pascal voc 2007 dataset are composed of three folders: Annotations, ImageSets, JPEGImages, as shown in Fig(a). You should build your own dataset like this. The annotations file should be ".xml" format named by image name, each sample own a xml file as shown in Fig(b), and the file .xml formate like Fig(c),Fig(d). Then you divide your dataset into trainval, val, train, test four part and save them in the ImageSets folder like Fig(e) and each file formate just like Fig(g) save the image name without filename extension. Then you delete the original "VOC2007" folder inside the "VOCdevkit" folder with the new dataset folder you just created. 
-<img src="util/data-formate.png" width="700">
+<img src="util/data-formate-1.png" width="700">
 
 ### Step 5: Modify multiple files
 (1) change the file "$Faster-RCNN-root/lib/datasets/pascal_voc.py" line 30 "self._classes" to the actuall classes of your datasets such as 5.
