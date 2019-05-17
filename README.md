@@ -46,7 +46,7 @@ Then you should linke this dataset with py-faster-rcnn:
 ### Step 4: Prepare your own dataset
 
 
-(1) Transform your data into the format of VOC2007. The pascal voc 2007 dataset are composed of three folders: Annotations, ImageSets, JPEGImages. You should build your own dataset like this. The annotations file should be ".xml" format named by image name, each sample own a xml file. Then you divide your dataset into trainval, val, train, test part. Then you delete the original "VOC2007" folder inside the "VOCdevkit" folder with the new dataset folder you just created. 
+(1) Transform your data into the format of VOC2007. The pascal voc 2007 dataset are composed of three folders: Annotations, ImageSets, JPEGImages, as shown in Fig(a). You should build your own dataset like this. The annotations file should be ".xml" format named by image name, each sample own a xml file as shown in Fig(b), and the file .xml formate like Fig(c),Fig(d). Then you divide your dataset into trainval, val, train, test four part and save them in the ImageSets folder like Fig(e) and each file formate just like Fig(g) save the image name without filename extension. Then you delete the original "VOC2007" folder inside the "VOCdevkit" folder with the new dataset folder you just created. 
 <img src="util/data-formate.png" width="700">
 
 ### Step 5: Modify multiple files
@@ -81,7 +81,7 @@ Then the training model will be saved in "$Faster-RCNN-root/output/" folder.
 ### demo
 <img src="data/demo_result/001763.jpg" width="400"> <img src="data/demo_result/004545.jpg" width="400">
 <img src="data/demo_result/000000524291.jpg" width="400"> <img src="data/demo_result/person.jpg" width="400">
-
+<img src="data/demo_result/000000262275.jpg" width="400"> <img src="data/demo_result/5.jpg" width="400">
 ### Evaluation time cost
     110ms/eval on GPU
 
