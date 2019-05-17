@@ -79,7 +79,7 @@ Before training your model, remember to delete the file "data/cache/*", in case 
 Then the training model will be saved in "$Faster-RCNN-root/output/" folder.
 
 ### demo
-
+|<img src="data/demo_result/001763.jpg" width="300">|<img src="data/demo_result/004545.jpg" width="300">
 
 ### Evaluation time cost
     110ms/eval on GPU
